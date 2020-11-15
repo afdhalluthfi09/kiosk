@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Judson&family=PT+Serif&family=PT+Serif+Caption&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+#myVideo{
+    /* height: 100vh; */
+    width: 100vw;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+
+.d-playkop{
+    display: fixed;
+    top: 0;
+}
+
+.content-image{
+
+    background-size: cover;
+    
+    height: 100vh;
+    position: relative;
+}
+.mySlides{
+    display: none;
+}
+.img-s{
+    vertical-align: middle;
+}
+
+
+.fade{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+
+}
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+@keyframes fade{
+    from{opacity: .4}
+    to{opacity: 1}
+}
+
+.titel{
+    font-family: 'Archivo Black', sans-serif;
+    color:salmon;
+}
+.subtitle{
+    font-family: 'Judson',serif;
+  
+}
+
+
+/* dropdown */
+
+.p-info{
+    width: 36vw;
+    text-align: center;
+    background-color: blue;
+}
+.dropdown-content{
+    width: 36vw;
+    display: none;
+}
+.dropdown-content table{
+    display: block;
+    background-color: #fff;
+    overflow: scroll;
+    height: 200px;
+}
+
+table  tr  th {
+    font-size: 14px;
+    color: red;
+    text-align: center;
+}
+.dropdown{
+    display: block;
+    position: static;
+}
+
+.show{
+    display: block;
+}
+
+.sideBar{
+    width: 37vw;
+}
+
+/* p dropdown */
+
+/* text-berjalan */
+.running-text{
+    
+    background-color: salmon;
+    position: relative;
+    overflow: hidden;
+}
+
+.running-text p {
+    position: relative;
+    animation: animate 200s linear infinite;
+    transform:  translateX(100%);
+    overflow: hidden;
+    width: 100%;
+    font-size: 14px;
+    
+    font-weight: 400;
+    font-family: 'Bebas Neue';
+}
+
+.running-text p span a{
+    text-decoration: none;
+    color: black;
+}
+
+@keyframes animate{
+    0%{transform: translateX(0);}
+    100%{transform: translateX(-100%);}
+    0%{transform: translateX(100%);}
+}
+
+footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+/* p_text-berjalan */
+
+/* frame */
+.zframe{
+    width: 100vw;
+    height: 400px;
+
+}
+/* p_frame */
+
+/* backling */
+
+.backling{
+    position: relative;
+    margin-top: -5px;
+    left: 50px;
+}
+
+.backling img{
+    width: 226px;
+    
+}
+
+.g-back{
+    left: 200px;   
+}
+/* p_backling */
+
+.tit{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 300px;
+}
